@@ -8,19 +8,19 @@ services:
     volumes:
       - "/var/run/docker.sock:/tmp/docker.sock:ro"
     environment:
-      - DEFAULT_HOST=proxy.degreeconverterapi
+      - DEFAULT_HOST=proxy.CelsiusFahrenheitapi
 
   degree-converter-1:
     image: degree-converter-api:latest
     environment:
-      - VIRTUAL_HOST=proxy.degreeconverterapi
+      - VIRTUAL_HOST=proxy.CelsiusFahrenheitapi
 
   degree-converter-2:
     image: degree-converter-api:latest
     environment:
-      - VIRTUAL_HOST=proxy.degreeconverterapi
+      - VIRTUAL_HOST=proxy.CelsiusFahrenheitapi
 
   degree-converter-3:
     image: degree-converter-api:latest
     environment:
-      - VIRTUAL_HOST=proxy.degreeconverterapi
+      - VIRTUAL_HOST=proxy.CelsiusFahrenheitapi

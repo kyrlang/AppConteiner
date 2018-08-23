@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 
-namespace DegreeConverter.Controllers
+namespace CelsiusFahrenheit.Controllers
 {
     [Route("api/[controller]")]
     public class ConverterController : Controller

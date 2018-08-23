@@ -10,4 +10,4 @@ COPY . .
 RUN dotnet publish CelsiusFahrenheit.csproj -c Release -o /app
 
 EXPOSE 3000
-CMD [ "dotnet", "DegreeConverter.dll" ]
+CMD [ "dotnet", "CelsiusFahrenheit.dll" ]
