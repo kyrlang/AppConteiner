@@ -1,5 +1,5 @@
 #!/bin/bash
 
-docker build -t degree-converter-api ../../.
+docker build -t aula03-app ../../.
 
 docker-compose up

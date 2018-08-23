@@ -1,7 +1,7 @@
 #!/bin/bash
 
-docker build -t degree-converter-api ../../.
+docker build -t aula03-app ../../.
 
-az login -u $username -p $password
+az login -u $usuario -p $senha
 
-az container create -g $resource --name degree-converter-api --image degree-converter-api:latest --ip-address public
+az container create -g $resource --name aula03-app --image aula03-app:latest --ip-address public

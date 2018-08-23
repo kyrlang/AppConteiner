@@ -11,16 +11,16 @@ services:
       - DEFAULT_HOST=proxy.CelsiusFahrenheitapi
 
   degree-converter-1:
-    image: degree-converter-api:latest
+    image: aula03-app:latest
     environment:
       - VIRTUAL_HOST=proxy.CelsiusFahrenheitapi
 
   degree-converter-2:
-    image: degree-converter-api:latest
+    image: aula03-app:latest
     environment:
       - VIRTUAL_HOST=proxy.CelsiusFahrenheitapi
 
   degree-converter-3:
-    image: degree-converter-api:latest
+    image: aula03-app:latest
     environment:
       - VIRTUAL_HOST=proxy.CelsiusFahrenheitapi
