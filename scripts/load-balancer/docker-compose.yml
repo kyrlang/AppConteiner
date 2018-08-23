@@ -1,0 +1,26 @@
+version: '2'
+
+services:
+  nginx-proxy:
+    image: jwilder/nginx-proxy
+    ports:
+      - "80:80"
+    volumes:
+      - "/var/run/docker.sock:/tmp/docker.sock:ro"
+    environment:
+      - DEFAULT_HOST=proxy.degreeconverterapi
+
+  degree-converter-1:
+    image: degree-converter-api:latest
+    environment:
+      - VIRTUAL_HOST=proxy.degreeconverterapi
+
+  degree-converter-2:
+    image: degree-converter-api:latest
+    environment:
+      - VIRTUAL_HOST=proxy.degreeconverterapi
+
+  degree-converter-3:
+    image: degree-converter-api:latest
+    environment:
+      - VIRTUAL_HOST=proxy.degreeconverterapi
